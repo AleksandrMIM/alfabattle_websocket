@@ -1,0 +1,35 @@
+server:
+  port: 9094
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write_dates_as_timestamps: false
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 10000
+        read-timeout: 30000
+
+websocket:
+  api:
+    url: ws://localhost:9094/chat
+
+alfabank:
+  api:
+    url: ${ALFA_API_URL:https://localhost:9090}
+  key-store:
+    path: classpath:identity.jks
+    password: secret
+    key-password: secret
+  trust-store:
+    path: classpath:identity.jks
+    password: secret

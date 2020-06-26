@@ -1,1 +1,1 @@
-# alfabattle_websocket
+# ALFABATTLE_WEBSOCKET

@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  alfabattle-rest:
+    container_name: alfabattle-rest
+    image: aminetor/alfabattle_rest:1.0-SNAPSHOT
+    ports:
+      - 9090:9090
+  alfabattle-websocket:
+    container_name: alfabattle-websocket
+    depends_on:
+      - alfabattle-rest
+    image: aminetor/alfabattle_websocket:1.0-SNAPSHOT
+    ports:
+      - 9094:9094
+    environment:
+      - JAVA_OPTS=
+        -DALFA_API_URL=https://alfabattle-rest:9090

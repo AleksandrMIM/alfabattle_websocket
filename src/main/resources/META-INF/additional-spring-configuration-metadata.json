@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "alfabank.api.url",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.api.url."
+    },
+    {
+      "name": "alfabank.key-store.path",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.key-store.path."
+    },
+    {
+      "name": "alfabank.key-store.password",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.key-store.password."
+    },
+    {
+      "name": "alfabank.trust-store.path",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.trust-store.path."
+    },
+    {
+      "name": "alfabank.trust-store.password",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.trust-store.password."
+    },
+    {
+      "name": "alfabank.trust-store.key-password",
+      "type": "java.lang.String",
+      "description": "Description for alfabank.trust-store.key-password."
+    }
+  ] }
